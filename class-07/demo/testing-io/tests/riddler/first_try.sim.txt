@@ -1,0 +1,7 @@
+What is your name?
+> dev
+Hi, dev!
+Step right up and guess my favorite color!
+What is your guess?
+> green
+You got it!

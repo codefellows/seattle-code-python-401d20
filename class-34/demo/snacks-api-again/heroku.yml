@@ -1,0 +1,9 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: gunicorn project.wsgi
+release:
+  image: web
+
+

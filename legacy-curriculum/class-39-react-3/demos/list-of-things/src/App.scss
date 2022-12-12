@@ -1,0 +1,20 @@
+$primary: red;
+
+.App {
+
+    text-align: center;
+
+    h2 {
+        color: $primary;
+
+    }
+
+    nav ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin: 1em;
+        }
+    }
+}

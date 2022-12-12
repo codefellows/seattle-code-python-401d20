@@ -1,0 +1,9 @@
+Enter r to roll or q to quit
+> r
+*** 5 ***
+Enter r to roll or q to quit
+> r
+*** 6 ***
+Enter r to roll or q to quit
+> q
+OK, bye

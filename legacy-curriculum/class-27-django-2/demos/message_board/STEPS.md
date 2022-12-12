@@ -1,0 +1,29 @@
+# Message Board Steps
+
+- create `message_board` project
+- create `posts` app
+- create `Post` model
+  - add `text` TextField property
+- activate the model
+- add model to admin
+- create a super user
+- modify `Post` model to be readable in admin
+- create `HomePageView`
+  - extend `ListView`
+  - give a template of `home.html`
+  - associate `Post` model
+- create `home.html` template
+  - in `templates` folder in root of project
+  - register `templates` folder in project settings
+  - use `Django Templating Language` to display all posts' text
+- update `HomePageView` to provide explicit name for object list
+- update url patterns for app and project
+- add 4 posts in admin
+- view home page and confirm 4 posts showing properly
+- create `PostModelTest`
+  - create `Post` object in set up
+  - create test to verify the post's text is correct
+- create `HomePageViewTest`
+  - test view's status code
+  - test view using correct template
+  - use url name instead of hard coded path
