@@ -2,11 +2,16 @@
 
 ## Overview
 
-Today you'll begin working on a command line version of the dice game `Ten Thousand` using core Python tools and understanding of the basics of the language. The game is also known as Ten Thousand, Zilch or Foo.
+Today you'll begin working on a command line version of the dice game `Ten Thousand` using core Python tools and understanding of the basics of the language. The game is also known as Farkle, Game of Greed, Zilch or Foo.
 
 ## Class Outline
 
-<!-- To Be Completed By Instructor -->
+- Challenge Review
+- Challenge Prep
+- Lab Review
+- Lab Prep
+- Code Demos
+- Lab Prep Wrap Up
 
 ## Learning Objectives
 
@@ -23,4 +28,3 @@ Today you'll begin working on a command line version of the dice game `Ten Thous
 - Counter module
 - Implement game logic
 - Create helper classes
-
