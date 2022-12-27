@@ -1,5 +1,5 @@
 import pytest
-from ten_thousand.game_logic import GameLogic
+from rolling_dice.game_logic import GameLogic
 
 # Testing - Roll Dice
 # When rolling 1 to 6 dice ensure...
