@@ -1,0 +1,26 @@
+Welcome to Ten Thousand
+(y)es to play or (n)o to decline
+> y
+Starting round 1
+Rolling 6 dice...
+*** 2 3 1 3 4 2 ***
+Enter dice to keep, or (q)uit:
+> 1
+You have 100 unbanked points and 5 dice remaining
+(r)oll again, (b)ank your points or (q)uit:
+> r
+Rolling 5 dice...
+*** 4 2 4 4 6 ***
+Enter dice to keep, or (q)uit:
+> 444
+You have 500 unbanked points and 2 dice remaining
+(r)oll again, (b)ank your points or (q)uit:
+> b
+You banked 500 points in round 1
+Total score is 500 points
+Starting round 2
+Rolling 6 dice...
+*** 3 2 3 2 1 4 ***
+Enter dice to keep, or (q)uit:
+> q
+Thanks for playing. You earned 500 points
