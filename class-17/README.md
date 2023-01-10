@@ -6,9 +6,14 @@ We can consume web sites with our eyes, ears and fingers. But how about getting 
 
 If a service exposes an API then you're good to go. But what if they haven't? That's where web scraping comes in.
 
-## Class Outline
+## Feedback Discussion
 
-<!-- To Be Completed By Instructor -->
+- 'Less review more preview'
+- Emphasis on python code
+- More structure to lectures
+- Roadmap/big picture 'Why'
+
+## Class Outline
 
 ## Learning Objectives
 
