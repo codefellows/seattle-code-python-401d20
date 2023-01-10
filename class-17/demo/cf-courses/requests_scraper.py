@@ -1,5 +1,5 @@
 import requests
-from parser import parse
+from page_parser import parse
 
 if __name__ == '__main__':
     url = "https://testing-www.codefellows.org/course-calendar/?filters=400:%20Advanced,code-python-401"

@@ -1,5 +1,5 @@
 from playwright.sync_api import sync_playwright
-from parser import parse
+from page_parser import parse
 
 
 def main():
