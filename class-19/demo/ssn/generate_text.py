@@ -1,6 +1,10 @@
 from random import shuffle
 from faker import Faker
 
+# NOTE: this demo is optional,
+# but if you're interested in how "text_with_soc_sec_nums.txt"
+# was generated then read on...
+#
 fake = Faker()
 
 texts = [fake.text() for _ in range(10)]
