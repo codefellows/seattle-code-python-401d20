@@ -24,3 +24,5 @@ class HomePageView(TemplateView):
                 "reference_url": "https://en.wikipedia.org/wiki/Spoon_(band)"
             },
         ]
+
+        return context
