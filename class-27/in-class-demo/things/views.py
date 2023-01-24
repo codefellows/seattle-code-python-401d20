@@ -1,4 +1,5 @@
-from django.views.generic import TemplateView
+from django.views.generic import DetailView, ListView, TemplateView
+from .models import Thing
 
 
 class HomePageView(TemplateView):
@@ -26,3 +27,15 @@ class HomePageView(TemplateView):
         ]
 
         return context
+
+
+class ThingListView(ListView):
+    template_name = 'thing_list.html'
+    model = Thing
+
+
+class ThingDetailView(DetailView):
+    template_name = 'thing_detail.html'
+    model = Thing
+
+
