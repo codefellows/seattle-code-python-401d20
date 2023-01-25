@@ -1,56 +1,57 @@
 movies = [
   {
-    title: "Beetlejuice",
-    year: 1988,
-    genres: ["Comedy", "Fantasy"],
+    "title": "Beetlejuice",
+    "year": 1988,
+    "genres": ["Comedy", "Fantasy"],
   },
   {
-    title: "The Cotton Club",
-    year: 1984,
-    genres: ["Crime", "Drama", "Music"],
+    "title": "The Cotton Club",
+    "year": 1984,
+    "genres": ["Crime", "Drama", "Music"],
   },
   {
-    title: "The Shawshank Redemption",
-    year: 1994,
-    genres: ["Crime", "Drama"],
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genres": ["Crime", "Drama"],
   },
   {
-    title: "Crocodile Dundee",
-    year: 1986,
+    "title": "Crocodile Dundee",
+    "year": 1986,
 
-    genres: ["Adventure", "Comedy"],
+    "genres": ["Adventure", "Comedy"],
   },
   {
-    title: "Valkyrie",
-    year: 2008,
-    genres: ["Drama", "History", "Thriller"],
+    "title": "Valkyrie",
+    "year": 2008,
+    "genres": ["Drama", "History", "Thriller"],
   },
   {
-    title: "Ratatouille",
-    year: 2007,
-    genres: ["Animation", "Comedy", "Family"],
+    "title": "Ratatouille",
+    "year": 2007,
+    "genres": ["Animation", "Comedy", "Family"],
   },
   {
-    title: "City of God",
-    year: 2002,
+    "title": "City of God",
+    "year": 2002,
 
-    genres: ["Crime", "Drama"],
+    "genres": ["Crime", "Drama"],
   },
   {
-    title: "Memento",
-    year: 2000,
+    "title": "Memento",
+    "year": 2000,
 
-    genres: ["Mystery", "Thriller"],
+    "genres": ["Mystery", "Thriller"],
   },
   {
-    title: "The Intouchables",
-    year: 2011,
+    "title": "The Intouchables",
+    "year": 2011,
 
-    genres: ["Biography", "Comedy", "Drama"],
+    "genres": ["Biography", "Comedy", "Drama"],
   },
   {
-    title: "Stardust",
-    year: 2007,
-    genres: ["Adventure", "Family", "Fantasy"],
+    "title": "Stardust",
+    "year": 2007,
+    "genres": ["Adventure", "Family", "Fantasy"],
   },
 ]
+
