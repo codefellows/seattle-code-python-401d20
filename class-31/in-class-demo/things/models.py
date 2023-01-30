@@ -8,7 +8,7 @@ class Thing(models.Model):
     description = models.TextField()
 
     # on creation
-    create_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
     # on save
     updated_at = models.DateTimeField(auto_now=True)
 
