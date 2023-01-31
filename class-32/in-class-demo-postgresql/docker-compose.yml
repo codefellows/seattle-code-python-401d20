@@ -19,7 +19,7 @@ services:
     # This line maps a port from the host machine to the web service container. In this case, it maps port 8000 on the host to port 8000 in the container. This allows the application running in the container to be accessible from the host machine on port 8000.
     ports:
       - "8000:8000"
-        
+
   # NEW
   db:
     image: postgres
