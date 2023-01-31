@@ -23,6 +23,10 @@ class ThingTests(APITestCase):
         )
         test_thing.save()
 
+    # NEW
+    def setUp(self):
+        self.client.login(username="testuser1", password="pass")
+
     def test_things_model(self):
         thing = Thing.objects.get(id=1)
         actual_owner = str(thing.owner)
@@ -78,3 +82,10 @@ class ThingTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
         things = Thing.objects.all()
         self.assertEqual(len(things), 0)
+
+    # New
+    def test_authentication_required(self):
+        self.client.logout()
+        url = reverse("thing_list")
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
