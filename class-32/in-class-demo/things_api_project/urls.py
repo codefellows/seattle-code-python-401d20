@@ -18,5 +18,9 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/things/', include('things.urls'))
+    path('api/v1/things/', include('things.urls')),
+    # https://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/#adding-login-to-the-browsable-api
+    # "api-auth" is potato
+    # https://github.com/encode/django-rest-framework/blob/master/rest_framework/urls.py
+    path("api-auth/", include("rest_framework.urls")),
 ]
