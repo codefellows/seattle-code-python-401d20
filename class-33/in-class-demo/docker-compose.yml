@@ -1,0 +1,21 @@
+### This Docker Compose file defines a single service, web, which is built from the current directory and runs a Django development server. The web service is configured to mount the current directory to the /code directory in the container, allowing changes made to the code on the host machine to be reflected in the container. The service is also mapped to port 8000 on the host machine, making the application running in the container accessible on port 8000. Overall, this file sets up a development environment for a Django application. ###
+
+
+# This line specifies the version of the Docker Compose file format. In this case, it is version 3, which is the latest version as of writing.
+version: '3'
+
+
+# This line starts the definition of the services that make up the application. In this case, there is only one service defined, which is the web service.
+services:
+  # This line starts the definition of the web service.
+  web:
+    # This line specifies the location of the Dockerfile for building the web service. In this case, it is the current directory (.).
+    build: .
+    # This line specifies the command to run when starting the web service. In this case, it runs the python manage.py runserver 0.0.0.0:8000 command, which starts a Django development server. It tells Docker to run the Django development server with the runserver management command and bind it to all available network interfaces (0.0.0.0) on port 8000.
+    command: python manage.py runserver 0.0.0.0:8000
+    # This line mounts a volume from the host to the web service container. In this case, it maps the current directory (.) to the /code directory in the container. This allows changes made to the code on the host machine to be reflected in the container.
+    volumes:
+      - .:/code
+    # This line maps a port from the host machine to the web service container. In this case, it maps port 8000 on the host to port 8000 in the container. This allows the application running in the container to be accessible from the host machine on port 8000.
+    ports:
+      - "8000:8000"
