@@ -15,12 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from rest_framework_simplejwt import views as jwt_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/things/', include('things.urls')),
+
     # https://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/#adding-login-to-the-browsable-api
     # "api-auth" is potato
     # https://github.com/encode/django-rest-framework/blob/master/rest_framework/urls.py
     path("api-auth/", include("rest_framework.urls")),
+
+    path('api/token', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
 ]
