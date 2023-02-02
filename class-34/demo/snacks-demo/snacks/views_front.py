@@ -24,7 +24,7 @@ class SnackUpdateView(LoginRequiredMixin, UpdateView):
 class SnackCreateView(LoginRequiredMixin, CreateView):
     template_name = "snacks/snack_create.html"
     model = Snack
-    fields = ["name", "fave", "purchaser"] # "__all__" for all of them
+    fields = ["name", "fave", "snacker"] # "__all__" for all of them
 
 
 class SnackDeleteView(LoginRequiredMixin, DeleteView):

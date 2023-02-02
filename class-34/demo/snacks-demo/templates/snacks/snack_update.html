@@ -1,5 +1,49 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  coming soon
+
+
+
+
+  <div
+    class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <form class="space-y-6" method="POST">
+      {% csrf_token %}
+
+
+      <h5 class="text-xl font-medium text-gray-900 dark:text-white">Update a Snack</h5>
+      <div>
+        <label for="id_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Snack Name</label>
+        <input type="text" name="name" id="id_name"
+               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+               placeholder="e.g. celery" required value="{{ snack.name }}">
+
+      </div>
+      <div>
+
+<div class="flex items-center mb-4">
+    <input id="id_fave" name="fave" type="checkbox" {% if snack.fave %}checked{% endif %} class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="id_fave" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fave</label>
+</div>
+
+
+      </div>
+      <div>
+        <label for="id_snacker" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Snacker</label>
+        <select name="snacker" id="id_snacker">
+          {% for value, choice in form.fields.snacker.choices %}
+            <option value="{{ value }}" {% if value == snack.snacker.id %}selected{% endif %}>{{ choice }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+
+      <button type="submit"
+              class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Create
+      </button>
+
+    </form>
+  </div>
+
 {% endblock content %}
