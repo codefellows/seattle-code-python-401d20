@@ -6,7 +6,8 @@ import { useState } from 'react';
 
 export default function Home() {
 
-    const [reply, setReply] = useState('Ask A Question!');
+    // const [reply, setReply] = useState('Ask A Question!');
+    const [answeredQuestions, setAnsweredQuestions] = useState([]);
 
     function questionAskedHandler(event) {
         event.preventDefault();
@@ -14,9 +15,25 @@ export default function Home() {
         // get a random reply from data.js
         const randomReply = replies[Math.floor(Math.random() * replies.length)];
 
+        // build an object representing the question and reply
+        const answeredQuestion = {
+            question: event.target.question.value,
+            reply: randomReply,
+            id: answeredQuestions.length,
+        };
+
         // alert(event.target.question.value);
         // alert(randomReply);
-        setReply(randomReply);
+        // setReply(randomReply);
+        setAnsweredQuestions([...answeredQuestions, answeredQuestion]);
+    }
+
+    function getLatestReply() {
+        if (answeredQuestions.length === 0) {
+            return 'Ask A Question';
+        }
+
+        return answeredQuestions[answeredQuestions.length - 1].reply;
     }
 
     return (
