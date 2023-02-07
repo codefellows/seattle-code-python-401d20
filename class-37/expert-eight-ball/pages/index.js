@@ -6,6 +6,8 @@ import { useState } from 'react';
 
 export default function Home() {
 
+    const [reply, setReply] = useState('Ask A Question!');
+
     function questionAskedHandler(event) {
         event.preventDefault();
 
@@ -13,7 +15,8 @@ export default function Home() {
         const randomReply = replies[Math.floor(Math.random() * replies.length)];
 
         // alert(event.target.question.value);
-        alert(randomReply);
+        // alert(randomReply);
+        setReply(randomReply);
     }
 
     return (
@@ -39,7 +42,7 @@ export default function Home() {
                 {/* Eight Ball */}
                 <div className="w-96 h-96 mx-auto my-4 bg-gray-900 rounded-full">
                     <div className="relative flex items-center justify-center w-48 h-48 rounded-full bg-gray-50 top-16 left-16">
-                        <p className="text-xl text-center">Ask A Question!</p>
+                        <p className="text-xl text-center">{reply}</p>
                     </div>
                 </div>
 
