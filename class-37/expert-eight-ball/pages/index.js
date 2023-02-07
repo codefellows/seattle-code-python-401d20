@@ -47,7 +47,7 @@ export default function Home() {
 
             <header className='flex items-center justify-between p-4 bg-gray-500 text-gray-50'>
                 <h1>Expert 8 Ball</h1>
-                <p>1 questions answered</p>
+                <p>{answeredQuestions.length} questions answered</p>
             </header>
 
             <main className=''>
@@ -59,7 +59,7 @@ export default function Home() {
                 {/* Eight Ball */}
                 <div className="w-96 h-96 mx-auto my-4 bg-gray-900 rounded-full">
                     <div className="relative flex items-center justify-center w-48 h-48 rounded-full bg-gray-50 top-16 left-16">
-                        <p className="text-xl text-center">{reply}</p>
+                        <p className="text-xl text-center">{getLatestReply()}</p>
                     </div>
                 </div>
 
