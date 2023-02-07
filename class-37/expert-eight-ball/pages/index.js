@@ -1,12 +1,19 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { replies } from '../data';
+import { useState } from 'react';
 
 
 export default function Home() {
 
     function questionAskedHandler(event) {
         event.preventDefault();
-        alert(event.target.question.value);
+
+        // get a random reply from data.js
+        const randomReply = replies[Math.floor(Math.random() * replies.length)];
+
+        // alert(event.target.question.value);
+        alert(randomReply);
     }
 
     return (
