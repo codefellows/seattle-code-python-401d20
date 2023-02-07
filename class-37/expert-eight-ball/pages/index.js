@@ -73,11 +73,22 @@ export default function Home() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        {/* <tr>
                             <td className="pl-2 border border-gray-700">1. </td>
                             <td className="pl-2 border border-gray-700">Will it rain?</td>
                             <td className="pl-2 border border-gray-700">Yes.</td>
-                        </tr>
+                        </tr> */}
+                        {
+                            answeredQuestions.map((item, idx) => {
+                                return (
+                                    <tr key={idx}>
+                                        <td className="pl-2 border border-gray-700">{item.id}</td>
+                                        <td className="pl-2 border border-gray-700">{item.question}</td>
+                                        <td className="pl-2 border border-gray-700">{item.reply}</td>
+                                    </tr>
+                                );
+                            })
+                        }
                     </tbody>
                 </table>
 
