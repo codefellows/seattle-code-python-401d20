@@ -28,12 +28,32 @@ export default function Home() {
                     <input name="question" className="flex-auto pl-1" />
                     <button className="px-2 py-1 bg-gray-500 text-gray-50">Ask</button>
                 </form>
+
                 {/* Eight Ball */}
                 <div className="w-96 h-96 mx-auto my-4 bg-gray-900 rounded-full">
                     <div className="relative flex items-center justify-center w-48 h-48 rounded-full bg-gray-50 top-16 left-16">
                         <p className="text-xl text-center">Ask A Question!</p>
                     </div>
                 </div>
+
+                {/* Table of Responses */}
+                <table className="w-1/2 mx-auto my-4">
+                    <thead>
+                        <tr>
+                            <th className="border border-gray-700">No.</th>
+                            <th className="border border-gray-700">Question</th>
+                            <th className="border border-gray-700">Response</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td className="pl-2 border border-gray-700">1. </td>
+                            <td className="pl-2 border border-gray-700">Will it rain?</td>
+                            <td className="pl-2 border border-gray-700">Yes.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </main>
 
             <footer className='p-4 mt-8 bg-gray-500 text-gray-50'>
