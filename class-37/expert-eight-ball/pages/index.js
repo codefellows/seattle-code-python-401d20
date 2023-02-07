@@ -79,9 +79,9 @@ export default function Home() {
                             <td className="pl-2 border border-gray-700">Yes.</td>
                         </tr> */}
                         {
-                            answeredQuestions.map((item, idx) => {
+                            answeredQuestions.map((item) => {
                                 return (
-                                    <tr key={idx}>
+                                    <tr key={item.id}>
                                         <td className="pl-2 border border-gray-700">{item.id}</td>
                                         <td className="pl-2 border border-gray-700">{item.question}</td>
                                         <td className="pl-2 border border-gray-700">{item.reply}</td>
