@@ -51,7 +51,7 @@ export default function Home() {
                 <p>{answeredQuestions.length} questions answered</p>
             </header> */}
 
-            <Header ans />
+            <Header answeredQuestions={answeredQuestions} />
 
             <main className=''>
                 {/* Form section */}
