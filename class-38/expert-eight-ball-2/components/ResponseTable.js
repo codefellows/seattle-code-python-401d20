@@ -23,7 +23,7 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
                     } else {
                         const color = "red";
                     }
-
+                    console.log(color);
                     return (
                         <tr key={item.id}>
                             <td className={`pl-2 border border-${color}-700`}>
