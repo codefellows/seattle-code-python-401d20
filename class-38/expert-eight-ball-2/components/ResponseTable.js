@@ -3,13 +3,13 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
         <table className="w-1/2 mx-auto my-4">
             <thead>
                 <tr>
-                    {tableHeaders.map((item, idx) => {
+                    {tableHeaders.map((item, idx) => (
                         return (
                             <th className="border border-gray-700" key={idx}>
                                 {item}
                             </th>
                         );
-                    })}
+                    ))}
                 </tr>
             </thead>
             <tbody>
