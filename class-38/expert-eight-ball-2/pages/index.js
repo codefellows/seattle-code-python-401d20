@@ -51,6 +51,8 @@ export default function Home() {
                 <p>{answeredQuestions.length} questions answered</p>
             </header> */}
 
+            <Header />
+
             <main className=''>
                 {/* Form section */}
                 <form className="flex w-1/2 p-2 mx-auto my-4 bg-gray-200" onSubmit={questionAskedHandler}>
