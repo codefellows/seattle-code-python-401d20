@@ -28,5 +28,7 @@ export default function ResponseTable(props) {
                     })}
                 </tbody>
             </table>
+        :
+            <h1> </h1>
     );
 }
