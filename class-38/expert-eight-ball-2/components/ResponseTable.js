@@ -4,11 +4,9 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
             <thead>
                 <tr>
                     {tableHeaders.map((item, idx) => (
-                        return (
-                            <th className="border border-gray-700" key={idx}>
-                                {item}
-                            </th>
-                        );
+                        <th className="border border-gray-700" key={idx}>
+                            {item}
+                        </th>
                     ))}
                 </tr>
             </thead>
