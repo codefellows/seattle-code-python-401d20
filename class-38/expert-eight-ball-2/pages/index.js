@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { replies } from '../data';
 import { useState } from 'react';
+import Header from ''
 
 
 export default function Home() {
