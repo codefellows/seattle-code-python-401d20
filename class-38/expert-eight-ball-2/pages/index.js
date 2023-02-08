@@ -43,7 +43,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header answeredQuestions={answeredQuestions} name={"Student"} color={/>
+            <Header answeredQuestions={answeredQuestions} name={"Student"} color={"green"} />
 
             <main className=''>
                 <QuestionForm questionAskedHandler={questionAskedHandler} />
