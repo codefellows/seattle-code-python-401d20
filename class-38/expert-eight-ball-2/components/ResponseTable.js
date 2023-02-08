@@ -18,11 +18,9 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
             </thead>
             <tbody>
                 {answeredQuestions.map((item) => {
-                    let color = "red"
+                    let color = "red";
                     if (answeredQuestions.length % 2 == 0) {
-                        const color = "blue";
-                    } else {
-                        const color = "red";
+                        color = "blue";
                     }
                     console.log(color);
                     return (
