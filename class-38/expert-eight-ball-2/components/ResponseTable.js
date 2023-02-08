@@ -13,6 +13,7 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
             <tbody>
                 {answeredQuestions.map((item) => {
                     return (
+                        answeredQuestions
                         <tr key={item.id}>
                             <td className="pl-2 border border-gray-700">
                                 {item.id}
