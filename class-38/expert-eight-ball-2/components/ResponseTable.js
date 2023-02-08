@@ -32,7 +32,7 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
                             <td className={`pl-2 border border-${color}-700`}>
                                 {item.question}
                             </td>
-                            <td className=`pl-2 border border-${color}-700`>
+                            <td className={`pl-2 border border-${color}-700`}>
                                 {item.reply}
                             </td>
                         </tr>
