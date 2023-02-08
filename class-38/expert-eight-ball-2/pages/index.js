@@ -56,7 +56,6 @@ export default function Home() {
 
                 <EightBall getLatestReply={getLatestReply} />
 
-
                 {/* Table of Responses */}
                 <table className="w-1/2 mx-auto my-4">
                     <thead>
