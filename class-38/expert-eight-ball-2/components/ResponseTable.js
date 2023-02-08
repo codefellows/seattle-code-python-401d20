@@ -18,7 +18,7 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
             </thead>
             <tbody>
                 {answeredQuestions.map((item) => {
-                    
+                    if ()
                     return (
                         <tr key={item.id}>
                             <td className="pl-2 border border-blue-700">
