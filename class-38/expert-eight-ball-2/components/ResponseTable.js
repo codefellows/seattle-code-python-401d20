@@ -1,5 +1,5 @@
-export default function ResponseTable(props) {
-    return props.answeredQuestions.length > 0 ? (
+export default function ResponseTable({ answeredQuestions }) {
+    return answeredQuestions.length > 0 ? (
         <table className="w-1/2 mx-auto my-4">
             <thead>
                 <tr>
@@ -9,7 +9,7 @@ export default function ResponseTable(props) {
                 </tr>
             </thead>
             <tbody>
-                {props.answeredQuestions.map((item) => {
+                {answeredQuestions.map((item) => {
                     return (
                         <tr key={item.id}>
                             <td className="pl-2 border border-gray-700">

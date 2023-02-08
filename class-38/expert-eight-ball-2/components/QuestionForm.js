@@ -1,4 +1,4 @@
-export default function QuestionForm(props) {
+export default function QuestionForm({ questionAskedHandler }) {
     return (
         <form
             className="flex w-1/2 p-2 mx-auto my-4 bg-gray-200"
