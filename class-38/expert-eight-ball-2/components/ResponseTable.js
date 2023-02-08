@@ -1,9 +1,7 @@
 export default function ResponseTable(props) {
-    
-    return (
-        if (true) {
 
-        }
+    return (
+        
         <table className="w-1/2 mx-auto my-4">
             <thead>
                 <tr>
