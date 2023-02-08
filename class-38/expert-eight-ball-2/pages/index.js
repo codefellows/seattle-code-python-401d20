@@ -15,16 +15,12 @@ export default function Home() {
         event.preventDefault();
         const randomReply = replies[Math.floor(Math.random() * replies.length)];
 
-        // build an object representing the question and reply
         const answeredQuestion = {
             question: event.target.question.value,
             reply: randomReply,
             id: answeredQuestions.length,
         };
 
-        // alert(event.target.question.value);
-        // alert(randomReply);
-        // setReply(randomReply);
         setAnsweredQuestions([...answeredQuestions, answeredQuestion]);
     }
 
