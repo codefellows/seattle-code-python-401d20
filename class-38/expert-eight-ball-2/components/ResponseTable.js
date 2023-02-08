@@ -18,7 +18,12 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
             </thead>
             <tbody>
                 {answeredQuestions.map((item) => {
-                    if ()
+                    if (answeredQuestions.length % 2 == 0) {
+                        const color = "red";
+                    } else {
+                        
+                    }
+
                     return (
                         <tr key={item.id}>
                             <td className="pl-2 border border-blue-700">
