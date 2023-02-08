@@ -67,11 +67,6 @@ export default function Home() {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* <tr>
-                            <td className="pl-2 border border-gray-700">1. </td>
-                            <td className="pl-2 border border-gray-700">Will it rain?</td>
-                            <td className="pl-2 border border-gray-700">Yes.</td>
-                        </tr> */}
                         {
                             answeredQuestions.map((item) => {
                                 return (
@@ -87,11 +82,6 @@ export default function Home() {
                 </table>
             </main>
 
-            {/* <footer className='p-4 mt-8 bg-gray-500 text-gray-50'>
-                <Link href="/careers">
-                    Careers
-                </Link>
-            </footer> */}
             <Footer />
         </>
     );
