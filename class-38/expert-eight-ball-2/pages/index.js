@@ -4,7 +4,7 @@ import { replies } from '../data';
 import { useState } from 'react';
 import Header from '../components/Header';
 import QuestionForm from '../components/QuestionForm';
-import EightBall from '@/components/EightBall';
+import EightBall from '../components/EightBall';
 
 
 export default function Home() {
@@ -60,6 +60,7 @@ export default function Home() {
                         <p className="text-xl text-center">{getLatestReply()}</p>
                     </div>
                 </div> */}
+                <EightBall getLatestReply={getLatestReply} />
 
 
                 {/* Table of Responses */}
