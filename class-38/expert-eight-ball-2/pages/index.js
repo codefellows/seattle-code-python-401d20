@@ -55,7 +55,7 @@ export default function Home() {
                     <input name="question" className="flex-auto pl-1" />
                     <button className="px-2 py-1 bg-gray-500 text-gray-50">Ask</button>
                 </form> */}
-                <QuestionForm />
+                <QuestionForm questionAskedHandler={questionAskedHandler} />
 
                 {/* Eight Ball */}
                 <div className="w-96 h-96 mx-auto my-4 bg-gray-900 rounded-full">
