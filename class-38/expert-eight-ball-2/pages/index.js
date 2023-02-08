@@ -10,6 +10,7 @@ import ResponseTable from '../components/ResponseTable';
 
 export default function Home() {
     const [answeredQuestions, setAnsweredQuestions] = useState([]);
+    const [tableHeaders, setTableHeaders] = useState(["No.", ]);
 
     function questionAskedHandler(event) {
         event.preventDefault();
