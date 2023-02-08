@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { replies } from '../data';
 import { useState } from 'react';
-import Header from ''
+import Header from '../components/Header';
 
 
 export default function Home() {
@@ -46,10 +46,10 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <header className='flex items-center justify-between p-4 bg-gray-500 text-gray-50'>
+            {/* <header className='flex items-center justify-between p-4 bg-gray-500 text-gray-50'>
                 <h1>Expert 8 Ball</h1>
                 <p>{answeredQuestions.length} questions answered</p>
-            </header>
+            </header> */}
 
             <main className=''>
                 {/* Form section */}
