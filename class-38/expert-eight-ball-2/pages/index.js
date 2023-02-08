@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { replies } from '../data';
 import { useState } from 'react';
 import Header from '../components/Header';
@@ -10,14 +9,10 @@ import ResponseTable from '../components/ResponseTable';
 
 
 export default function Home() {
-
-    // const [reply, setReply] = useState('Ask A Question!');
     const [answeredQuestions, setAnsweredQuestions] = useState([]);
 
     function questionAskedHandler(event) {
         event.preventDefault();
-
-        // get a random reply from data.js
         const randomReply = replies[Math.floor(Math.random() * replies.length)];
 
         // build an object representing the question and reply
