@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Header from '../components/Header';
 import QuestionForm from '../components/QuestionForm';
 import EightBall from '../components/EightBall';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -86,11 +87,12 @@ export default function Home() {
                 </table>
             </main>
 
-            <footer className='p-4 mt-8 bg-gray-500 text-gray-50'>
+            {/* <footer className='p-4 mt-8 bg-gray-500 text-gray-50'>
                 <Link href="/careers">
                     Careers
                 </Link>
-            </footer>
+            </footer> */}
+            <Footer />
         </>
     );
 }
