@@ -3,14 +3,14 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
         <table className="w-1/2 mx-auto my-4">
             <thead>
                 <tr>
-                    <th className="border border-gray-700">No.</th>
+                    {/* <th className="border border-gray-700">No.</th>
                     <th className="border border-gray-700">Question</th>
-                    <th className="border border-gray-700">Response</th>
+                    <th className="border border-gray-700">Response</th> */}
                     {tableHeaders.map((item, idx) => {
-                        <th className="border border-gray-700" key={idx}>{item}</th>
-                    })
-
-                    }
+                        <th className="border border-gray-700" key={idx}>
+                            {item}
+                        </th>;
+                    })}
                 </tr>
             </thead>
             <tbody>
