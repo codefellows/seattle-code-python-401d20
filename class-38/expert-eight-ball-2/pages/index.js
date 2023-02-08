@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import QuestionForm from '../components/QuestionForm';
 import EightBall from '../components/EightBall';
 import Footer from '../components/Footer';
+import ResponseTable from '../'
 
 
 export default function Home() {
@@ -58,7 +59,7 @@ export default function Home() {
                 <EightBall getLatestReply={getLatestReply} />
 
                 {/* Table of Responses */}
-                <table className="w-1/2 mx-auto my-4">
+                {/* <table className="w-1/2 mx-auto my-4">
                     <thead>
                         <tr>
                             <th className="border border-gray-700">No.</th>
@@ -79,7 +80,8 @@ export default function Home() {
                             })
                         }
                     </tbody>
-                </table>
+                </table> */}
+
             </main>
 
             <Footer />
