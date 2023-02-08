@@ -27,6 +27,6 @@ export default function ResponseTable(props) {
             </tbody>
         </table>
     ) : (
-        <h1 className="text-center">No Questions Asked Yet</h1>
+        <h1 className="text-center text-4xl">No Questions Asked Yet</h1>
     );
 }
