@@ -4,6 +4,7 @@ import { replies } from '../data';
 import { useState } from 'react';
 import Header from '../components/Header';
 import QuestionForm from '../components/QuestionForm';
+import EightBall from '@/components/EightBall';
 
 
 export default function Home() {
@@ -50,15 +51,16 @@ export default function Home() {
             <Header answeredQuestions={answeredQuestions} />
 
             <main className=''>
-                
+
                 <QuestionForm questionAskedHandler={questionAskedHandler} />
 
                 {/* Eight Ball */}
-                <div className="w-96 h-96 mx-auto my-4 bg-gray-900 rounded-full">
+                {/* <div className="w-96 h-96 mx-auto my-4 bg-gray-900 rounded-full">
                     <div className="relative flex items-center justify-center w-48 h-48 rounded-full bg-gray-50 top-16 left-16">
                         <p className="text-xl text-center">{getLatestReply()}</p>
                     </div>
-                </div>
+                </div> */}
+
 
                 {/* Table of Responses */}
                 <table className="w-1/2 mx-auto my-4">
