@@ -46,11 +46,6 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {/* <header className='flex items-center justify-between p-4 bg-gray-500 text-gray-50'>
-                <h1>Expert 8 Ball</h1>
-                <p>{answeredQuestions.length} questions answered</p>
-            </header> */}
-
             <Header answeredQuestions={answeredQuestions} />
 
             <main className=''>
