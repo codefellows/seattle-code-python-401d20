@@ -22,7 +22,6 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
                     if (answeredQuestions.length % 2 == 0) {
                         color = "blue";
                     }
-                    console.log(color);
                     return (
                         <tr key={item.id}>
                             <td className={`pl-2 border border-${color}-700`}>
