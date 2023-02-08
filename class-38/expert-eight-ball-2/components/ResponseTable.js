@@ -3,11 +3,17 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
         <table className="w-1/2 mx-auto my-4">
             <thead>
                 <tr>
-                    {tableHeaders.map((item, idx) => (
-                        <th className="border border-gray-700" key={idx}>
-                            {item}
-                        </th>
-                    ))}
+                    {tableHeaders.map((item, idx) =>
+                        answeredQuestions.length % 2 == 0 ? (
+                            <th className="border border-blue-700" key={idx}>
+                                {item}
+                            </th>
+                        ) : (
+                            <th className="border border-red-700" key={idx}>
+                                {item}
+                            </th>
+                        )
+                    )}
                 </tr>
             </thead>
             <tbody>
