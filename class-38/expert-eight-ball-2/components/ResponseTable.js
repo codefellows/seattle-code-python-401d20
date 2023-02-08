@@ -19,20 +19,20 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
             <tbody>
                 {answeredQuestions.map((item) => {
                     if (answeredQuestions.length % 2 == 0) {
-                        const color = "red";
+                        const color = "blue";
                     } else {
-                        
+                        const color = "red";
                     }
 
                     return (
                         <tr key={item.id}>
-                            <td className="pl-2 border border-blue-700">
+                            <td className="pl-2 border border--700">
                                 {item.id}
                             </td>
-                            <td className="pl-2 border border-blue-700">
+                            <td className="pl-2 border border--700">
                                 {item.question}
                             </td>
-                            <td className="pl-2 border border-blue-700">
+                            <td className="pl-2 border border--700">
                                 {item.reply}
                             </td>
                         </tr>
