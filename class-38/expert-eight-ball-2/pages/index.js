@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import QuestionForm from '../components/QuestionForm';
 import EightBall from '../components/EightBall';
 import Footer from '../components/Footer';
-import ResponseTable from '../'
+import ResponseTable from '../components/ResponseTable';
 
 
 export default function Home() {
@@ -81,7 +81,7 @@ export default function Home() {
                         }
                     </tbody>
                 </table> */}
-
+                <ResponseTable answeredQuestions={answeredQuestions} />
             </main>
 
             <Footer />
