@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { replies } from '../data';
 import { useState } from 'react';
 import Header from '../components/Header';
-import Header from '../components/Header';
+import QuestionForm from '../components/QuestionForm';
 
 
 export default function Home() {
@@ -51,10 +51,11 @@ export default function Home() {
 
             <main className=''>
                 {/* Form section */}
-                <form className="flex w-1/2 p-2 mx-auto my-4 bg-gray-200" onSubmit={questionAskedHandler}>
+                {/* <form className="flex w-1/2 p-2 mx-auto my-4 bg-gray-200" onSubmit={questionAskedHandler}>
                     <input name="question" className="flex-auto pl-1" />
                     <button className="px-2 py-1 bg-gray-500 text-gray-50">Ask</button>
-                </form>
+                </form> */}
+                <QuestionForm />
 
                 {/* Eight Ball */}
                 <div className="w-96 h-96 mx-auto my-4 bg-gray-900 rounded-full">
