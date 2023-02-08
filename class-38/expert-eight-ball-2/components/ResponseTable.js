@@ -26,13 +26,13 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
 
                     return (
                         <tr key={item.id}>
-                            <td className="pl-2 border border--700">
+                            <td className=`pl-2 border border-${color}-700`>
                                 {item.id}
                             </td>
-                            <td className="pl-2 border border--700">
+                            <td className=`pl-2 border border-${color}-700`>
                                 {item.question}
                             </td>
-                            <td className="pl-2 border border--700">
+                            <td className=`pl-2 border border-${color}-700`>
                                 {item.reply}
                             </td>
                         </tr>
