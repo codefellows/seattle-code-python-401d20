@@ -18,7 +18,8 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
             </thead>
             <tbody>
                 {answeredQuestions.map((item) => {
-                    return answeredQuestions.length % 2 == 0 ? (
+                    
+                    return (
                         <tr key={item.id}>
                             <td className="pl-2 border border-blue-700">
                                 {item.id}
@@ -27,18 +28,6 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
                                 {item.question}
                             </td>
                             <td className="pl-2 border border-blue-700">
-                                {item.reply}
-                            </td>
-                        </tr>
-                    ) : (
-                        <tr key={item.id}>
-                            <td className="pl-2 border border-red-700">
-                                {item.id}
-                            </td>
-                            <td className="pl-2 border border-red-700">
-                                {item.question}
-                            </td>
-                            <td className="pl-2 border border-red-700">
                                 {item.reply}
                             </td>
                         </tr>
