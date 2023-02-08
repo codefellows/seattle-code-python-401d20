@@ -6,7 +6,9 @@ export default function ResponseTable({ answeredQuestions, tableHeaders }) {
                     <th className="border border-gray-700">No.</th>
                     <th className="border border-gray-700">Question</th>
                     <th className="border border-gray-700">Response</th>
-                    {tableHeaders.map(())
+                    {tableHeaders.map((item, idx) => {
+                        
+                    })
 
                     }
                 </tr>
