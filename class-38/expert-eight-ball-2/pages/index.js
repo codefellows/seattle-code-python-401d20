@@ -49,7 +49,7 @@ export default function Home() {
 
                 <EightBall getLatestReply={getLatestReply} />
 
-                <ResponseTable answeredQuestions={answeredQuestions} table/>
+                <ResponseTable answeredQuestions={answeredQuestions} tableHeaders={tableHeaders} />
             </main>
 
             <Footer />
