@@ -1,0 +1,9 @@
+Welcome to Ten Thousand
+(y)es to play or (n)o to decline
+> y
+Starting round 1
+Rolling 6 dice...
+*** 4 4 5 2 3 1 ***
+Enter dice to keep, or (q)uit:
+> q
+Thanks for playing. You earned 0 points
